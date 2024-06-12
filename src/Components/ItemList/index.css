@@ -1,0 +1,94 @@
+
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    background-color: #f9f9f9;
+  }
+  
+  
+  .item {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.2s;
+  }
+  
+  .item:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  .item h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  
+  .item p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  
+  .deletebutton{
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    background-color: red;
+    
+  }
+  .editbutton{
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    
+
+    
+  }
+  
+  
+  
+  .item button:last-child {
+    margin-right: 0;
+  }
+  
+  
+  @media (max-width: 600px) {
+    .item-list {
+      padding: 10px;
+      gap: 10px;
+    }
+  
+    .item {
+      padding: 10px;
+    }
+  
+    .item h3 {
+      font-size: 1.2rem;
+    }
+  
+    .item p {
+      font-size: 0.9rem;
+    }
+  
+    .item button {
+      margin-right: 5px;
+      padding: 5px;
+    }
+  }
+  
